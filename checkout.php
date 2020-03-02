@@ -42,8 +42,8 @@
     <h1 style = "text-align:center">Chekout Form</h1>
     <p style = "text-align:center">* is required field</p>
     <form class="form" action="" method="POST">
-        FirstName: <input type="text" name="fname" size="30" maxlength="60" required pattern = "^[A-Za-z]^" placeholder = "Enter only characters">*<br><br>
-        LastName: <input type="text" name="lname" size="30" maxlength="60" required pattern = "^[A-Za-z]^" placeholder = "Enter only characters">*<br><br>
+        FirstName: <input type="text" name="fname" size="30" maxlength="60" placeholder = "Enter only characters">*<br><br>
+        LastName: <input type="text" name="lname" size="30" maxlength="60" placeholder = "Enter only characters">*<br><br>
         Payment Method: <br>
                 <input type="radio" name="payment" <?php if (isset($payment) && $payment=="Cash On Delivery") echo "checked";?> value="Cash On Delivery">Cash On Delivery
                 <input type="radio" name="payment" <?php if (isset($payment) && $payment=="Credit Card") echo "checked";?> value="Credit Card">Credit Card<br>
